@@ -58,11 +58,8 @@ Git 常用指令集介紹
 | 指令 | 作用 |
 | -------- | -------- | 
 | ```git config --list```   | 查看設定    | 
-| ==git config --list==   | 查看設定    | 
-| -------- | -------- | 
-| Text     | Text     | 
-| -------- | -------- |
-| Text     | Text     |
+
+
 
 >### init / clone
 
@@ -71,9 +68,6 @@ Git 常用指令集介紹
 | ```git clone```   | 抓遠端儲存庫下來	    | 
 | ```git init``` | Git 初始化 | 
 | ```rm -rf .git```     | 移除 Git     | 
-| ==git clone==   | 抓遠端儲存庫下來	    | 
-| ==git init== | Git 初始化 | 
-| ==rm -rf .git==     | 移除 Git     | 
 
 >### remote
 
@@ -82,9 +76,6 @@ Git 常用指令集介紹
 | ```git remote add (origin) <your url>``` | 遠端連結	| 
 | ```git remote set-url (origin) <your url>``` | 修改遠端連結 | 
 | ```git remote remove (origin)```     | 移除遠端連結     | 
-| ==git remote add (origin) <your url>== | 遠端連結	| 
-| ==git remote set-url (origin) <your url>== | 修改遠端連結 | 
-| ==git remote remove (origin)==     | 移除遠端連結     | 
 
 >### 基本版本控制語法
 
@@ -100,16 +91,7 @@ Git 常用指令集介紹
 .gitignore 配置
 ---
 於資料夾內新增一個新檔案，輸入```touch .gitignore``` 新增.gitignore檔，輸入```git status```查看檔案是否都存在，於此檔內新增想要被忽略的檔案，輸入```git status```查看檔案是否被git忽略。
-| ==git status== | 觀看狀態	| 
-| ==git add (file)== | 新增指定檔案至暫存區 | 
-| ==git add .==     | 新增所有檔案至暫存區     | 
-| ==git commit -m 'message'== | 將檔案提交至本地數據庫	| 
-| ==git pull== | 將遠端檔案合併到本地數據庫 | 
-| ==git push -u (remote) (branch)==  | 將檔案推至遠端數據庫  | 
     
-.gitignore 配置
----
-於資料夾內新增一個新檔案，輸入==touch .gitignore== 新增.gitignore檔，輸入==git status==查看檔案是否都存在，於此檔內新增想要被忽略的檔案，輸入==git status==查看檔案是否被git忽略。
 ![](https://i.imgur.com/SuxjmYz.jpg)
 
     
@@ -121,12 +103,6 @@ Git 常用指令集介紹
 ![](https://i.imgur.com/bqyn7RJ.png)
 
 ```git merge --no-ff <branch name>``` 合併分支（--no-ff是合併後保留分支）
-==git branch <branch name>== 新增分支
-    
-==git push origin <branch name>== 將分支推至遠端
-![](https://i.imgur.com/bqyn7RJ.png)
-
-==git merge --no-ff <branch name>== 合併分支（--no-ff是合併後保留分支）
     
 Commit 介紹及使用
 ---
@@ -137,11 +113,6 @@ Commit 介紹及使用
 ```git commit -m "msg"``` ＃ 說明這次的 commit 做啥事
     
 使用 ```git status``` 追蹤狀態且提示訊息
-==git commit== --> 將暫存區的檔案提交到儲存庫儲存
-    
-==git commit -m "msg"== ＃ 說明這次的 commit 做啥事
-    
-使用 ==git status== 追蹤狀態且提示訊息
     
 ![](https://i.imgur.com/t4cfHWJ.png)
 
